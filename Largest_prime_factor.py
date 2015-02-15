@@ -1,16 +1,27 @@
 #Get num
+import math
 bigNum = 600851475143
 
 def primeCheck(x):
-    notPrime 
-    for n in (2,x):
+    for n in range(2,int(math.sqrt(x))):
         if x%n == 0:
-            notPrime = True
-        else
+            return False
+            break
+    else:
+        return True
+        
 
 
 #divide by incremeants
-for n in range(bigNum):
-    #if factor found check large num for prime if not
+for n in range(2,100000000):
+#if factor found check large num for prime if not
     if bigNum%n == 0:
-    #Continue incremeanting
+        check = bigNum/n
+        if primeCheck(check) == True:
+            print bigNum/n
+            break
+        else:
+            print "Not prime"
+            pass
+print "No values in the range found"
+#Continue incremeanting

@@ -1,16 +1,27 @@
 first = 999
 second = 999
+palindromes = []
 
 def is_palindrome(x):
-    if len(str(x))%2 == 0:
+    y = []
+    x = str(x)
+    x = list(x)
+    for n in x:
+        y.append(n)
+    y.reverse()
+    x = "".join(x)
+    y = "".join(y)
+    if x == y:
+        return True
     else:
-        #x/2+1
+        return False
 
 
 while first > 99:
-    print str(first) + " * " + str(second)
     while second > 99:
+        if is_palindrome(first * second) == True:
+            palindromes.append(first*second)
         second -= 1
-        print str(first) + " * " + str(second)
     first -= 1
     second = 999
+print max(palindromes)

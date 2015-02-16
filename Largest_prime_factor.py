@@ -9,7 +9,7 @@ def primeCheck(x):
             break
     else:
         return True
-        
+
 
 
 #divide by incremeants

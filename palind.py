@@ -1,8 +1,5 @@
-x = str(4234)
-xl = []
 palindtaf = []
 palindfinals = []
-qq = 999
 def palindCheck():
     for digit in x:
         xl.append(digit)

@@ -18,4 +18,4 @@ for qq in range(1,999,1):
         palindCheck()
         palindtaf = []
 palindfinals.sort()
-print palindfinals
+print "largest palindrome made from the product of two 3-digit numbers = " + str(max(palindfinals))

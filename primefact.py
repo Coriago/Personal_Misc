@@ -1,4 +1,4 @@
-whol = 10000000001
+whol = 600851475143
 div = 2
 primefs = [1]
 fakedivs = []

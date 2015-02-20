@@ -1,7 +1,6 @@
 whol = 600851475143
 div = 2
 primefs = [1]
-ind = 0
 fakedivs = []
 while max(primefs) < (whol / max(primefs)):
     if whol % div == 0:

@@ -1,4 +1,4 @@
-whol = 930481
+whol = 600851475143
 div = 2
 primefs = [1]
 ind = 0

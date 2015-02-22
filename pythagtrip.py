@@ -9,3 +9,4 @@ for a in range(500):
         for c in range(500):
             if isPythagorean(a,b,c) and (a + b + c) == 1000:
                 print a*b*c
+                exit()

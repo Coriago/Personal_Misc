@@ -1,14 +1,19 @@
 import sys
-from PySide.QtCore import*
-from PySide.QtGui import*
+import random
 
-app = QApplication(sys.argv)
 
-label = QLabel("<font color=red size=100>Sample Text</font>")
-label2 = QLabel("<font color=blue size=100>Sample Text</font>")
-label3 = QLabel("<font color=green size=100>Sample Text</font>")
-label.show()
-label2.show()
-label3.show()
-app.exec_()
-sys.exit()
+nums = []
+
+def is_duplicate(l, r):
+    for n in l:
+        if r == n:
+            return True
+    return False
+
+for n in range(24):
+    randNum = random.randint(1, 300)
+    if is_duplicate(nums, randNum) == True:
+        n -= 1
+    else:
+        nums.append(randNum)
+print nums
